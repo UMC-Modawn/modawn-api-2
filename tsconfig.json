@@ -18,5 +18,14 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@lib/entity": [
+        "libs/entity/src"
+      ],
+      "@lib/entity/*": [
+        "libs/entity/src/*"
+      ]
+    }
   }
 }

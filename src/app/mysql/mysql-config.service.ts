@@ -4,7 +4,7 @@ import { config } from '../config/config.service';
 
 export class MysqlConfigService implements TypeOrmOptionsFactory {
   createTypeOrmOptions(): TypeOrmModuleOptions {
-    const entityPath = path.join(__dirname, './**/*.entity.{ts,js}');
+    const entityPath = path.join(__dirname, '../../../libs/**/*.entity.{ts,js}');
     return {
       type: 'mysql',
       host: config.mysqlHost,
